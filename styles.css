@@ -1,0 +1,323 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+	* {
+		box-sizing: border-box;
+		max-width: 1920px;
+	}
+	body{
+		margin: 0;
+		background-color:hsla(284,78%,38%,1.00);
+		z-index: 5;
+	}
+	header{ 
+		padding-top: 20%;
+		margin: 0 auto;
+	}
+	#foreground {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	#sun{
+		margin: 0 auto;
+		width: 100%;
+		position: fixed;
+		z-index: -2;
+		top: 0;
+	}
+	#background {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -3;
+	}
+	.mynav {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		background:hsla(0,0%,0%,1.00);
+		border-bottom: 0.5px solid hsla(0,0%,100%,1.00);
+		justify-content: space-around;
+		width: 100%;
+		z-index: 5;
+		box-shadow: 0 2px 2px 1px rgba(0,0,0,.2);
+	}
+	.mynav a {
+		display: block;
+		margin: 0 auto;
+		font-family: 'Shrikhand', 'Constantia', 'Lucida Bright', 'DejaVu Serif', 'Georgia', 'serif';
+		color: hsla(0,0%,100%,1.00); 
+		text-decoration: none;
+		text-align: center;
+		font-size: 35px;
+		padding: 1rem 5rem;
+		transition: all 200ms ease-in;
+		transform: scale(0.8);
+		white-space: nowrap;
+		flex: 1;
+	}
+	.mynav a:hover {
+		transition: all 200ms ease-in;
+		transform: scale(1);
+	}
+	.mynav a:active {
+		border-bottom: 3px solid hsla(0,0%,23%,1.00);
+	}
+	/*
+	.navTop {
+		display: flex;
+		position: fixed;
+		background:hsla(0,0%,0%,1.00);
+		border-bottom: 1px solid hsla(0,0%,23%,1.00);
+		justify-content: center;
+		width: 100%;
+		z-index: 10;
+		flex-direction: row;
+	}
+	This was intended to be my class for my fixed nav crated by my javascript in my footer.
+	*/
+	main { 
+		display: block;
+		margin: 0 auto;
+		background-color:hsla(0,0%,100%,1.00);
+		position: relative;
+		z-index: 5;
+		width: 90%;
+		top: 0;
+	}
+	main h1{
+		font-family: 'Shrikhand', 'Constantia', 'Lucida Bright', 'DejaVu Serif', 'Georgia', 'serif';
+		font-size: 150px;
+		margin: 0 auto;
+		padding-left: 5rem;
+		padding-top: 2rem;
+	}
+	.merchandise {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		justify-content: center;
+		grid-gap: 10px;
+		margin: 0 auto;
+		padding-top: 0.2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-bottom: 1rem; 
+	}
+	.sortHeader {
+		font-family: 'Shrikhand', 'Constantia', 'Lucida Bright', 'DejaVu Serif', 'Georgia', 'serif';
+		padding-left: 4rem;
+	}
+
+	 article {
+		font-family: 'Shrikhand', 'Constantia', 'Lucida Bright', 'DejaVu Serif', 'Georgia', 'serif';
+		border-radius: 7px;
+		transition: all 200ms ease-in;
+		transform: scale(0.9); 
+		border: solid 2px hsla(0,0%,0%,1.00);
+		background-color: hsla(0,0%,0%,1.00);
+		box-shadow: 0px 2px 5px rgba(0, 0, 255, .2);
+		color:hsla(0,0%,100%,1.00);
+		overflow: hidden;
+	}
+	 article img {
+		width: 100%;
+		border-radius: 7px;
+		bottom: 0;
+		border: solid 2px hsla(0,0%,0%,1.00);
+	}
+	.merchandise article h3 {
+		text-align: center;
+		color: hsla(0,0%,100%,1.00);
+		font-size: 20px;
+		text-decoration: none;
+	}
+	.merch:hover {
+		transition: all 200ms ease-in;
+		transform: scale(1);
+		box-shadow: 0px 2px 5px hsla(284,78%,38%,.5);
+	}
+	.product {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
+		max-width: 1800px;
+		padding-top: 4rem;
+		padding-bottom: 3rem;
+		justify-content: center;
+	}
+	.salesheet {
+		font-family: 'Shrikhand', 'Constantia', 'Lucida Bright', 'DejaVu Serif', 'Georgia', 'serif';
+		text-align: right;
+		border: solid 2px hsla(0,0%,0%,1.00);
+		padding: 2rem;
+	}
+	.salesheet h2 {
+		text-align: right;
+		font-size: 50px;
+		padding-top: 1rem;
+		color: hsla(0,0%,100%,1.00);
+	}
+	.about {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: 650px;
+		margin: 0 auto;
+		justify-content: center;
+	}
+	.about h2 {
+		font-size: 50px;
+	}
+	.about p {
+		font-size: 25px;
+	}
+	.about iframe {
+		display: block;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		padding: 1rem;
+	}
+	.content {
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.salesheet p {
+		color: hsla(0,0%,100%,1.00);
+	}
+	.checkOut{
+		display: block;
+		margin: 0 auto;
+		width: 40%;
+	}
+	.cart{
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.cart img{
+		display: block;
+		margin: 0 auto;
+		padding-top: 3rem;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		padding-bottom: 1rem;
+	}
+	.cart h2{
+		font-size: 40px;
+	}
+	.cart p{
+		font-size: 25px;
+	}
+	.cart form{
+		display: block;
+	}
+	.footer {
+		display: block;
+  		width: 100%;
+  		padding: 3rem;
+  		background-color: hsla(0,0%,0%,1.00);
+  		text-align: center;
+		border-top: solid 0.5px hsla(0,0%,100%,1.00);
+		bottom: 0;
+	}
+	.footer a {
+		font-family: 'Shrikhand', 'Constantia', 'Lucida Bright', 'DejaVu Serif', 'Georgia', 'serif';
+		font-size: 30px;
+		color: hsla(0,0%,100%,1.00);
+		text-decoration: none;
+	}
+	@media all and (max-width: 1400px){
+		.product{
+			grid-template-columns: 1fr;
+		}
+		.about{
+			grid-template-columns: 1fr;
+		}
+	}
+	@media all and (max-width: 1150px){
+		main h1{
+			text-align: center;
+			padding: 0;
+		}
+		.merchandise{
+		grid-template-columns: 1fr 1fr 1fr;
+		}
+		.mynav a{
+		font-size: 25px;
+		}
+	}
+	@media all and (max-width: 995px){
+		main h1{
+		font-size: 125px;
+		}
+		.mynav a{
+			padding: 0.5rem 2rem;
+			font-size: 25px;
+		}
+	}
+	@media all and (max-width: 900px){
+		.merchandise{
+		grid-template-columns: 1fr 1fr;
+		}
+		.about h2 {
+			font-size: 35px;
+		}
+		.about p {
+			font-size: 25px;
+		}
+	}
+	@media all and (max-width: 630px){
+		main h1{
+			font-size: 100px;
+		}
+		.mynav{
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		}
+		.mynav a{
+			padding: 0.3rem 1rem;
+		}
+		.mynav:hover{
+			height: 15rem;
+		}
+		.merchandise{
+		grid-template-columns: 1fr;
+		}
+		.about h2 {
+			font-size: 30px;
+		}
+		.about p {
+			font-size: 20px;
+		}
+	}
+	@media all and (max-width: 500px){
+		main h1{
+			font-size: 75px;
+		}
+		.mynav a{
+			padding: 0.3rem 0.5rem;
+			font-size: 30px;
+		}
+		.sortHeader form{
+		display: block;
+		margin-right: 2rem;
+		}
+	}
+	@media all and (max-width: 390px){
+		main h1{
+			font-size: 60px;
+		}
+		.mynav a{
+			font-size: 15px;
+		}
+		.about h2 {
+			font-size: 25px;
+		}
+		.about p {
+			font-size: 15px;
+		}
+	}
+
